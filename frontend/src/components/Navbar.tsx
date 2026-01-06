@@ -32,9 +32,9 @@ const Navbar = ({ scrolled }: NavbarProps) => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-2xl font-bold gradient-text"
+            className="text-2xl font-bold gradient-text font-mono"
           >
-            Seyi Kuforiji
+            &lt;SK /&gt;
           </motion.div>
 
           {/* Desktop Navigation */}
