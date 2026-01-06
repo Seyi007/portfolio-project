@@ -18,8 +18,9 @@ class Settings:
         "http://localhost:3000",
         "http://127.0.0.1:3000",
         "http://localhost",
-        # Add your Render frontend URL here after deployment
-        # e.g., "https://portfolio-frontend.onrender.com"
+        # Production URLs (add your Render frontend URL once deployed)
+        "https://portfolio-project-2nen.onrender.com",  # Backend URL
+        # Add frontend URL here: e.g., "https://your-portfolio-frontend.onrender.com"
     ]
     
     # Email Configuration
