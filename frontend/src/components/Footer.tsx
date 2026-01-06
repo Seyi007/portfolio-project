@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold gradient-text mb-4">Portfolio</h3>
+            <h3 className="text-xl font-bold gradient-text mb-4">Seyi Kuforiji</h3>
             <p className="text-gray-400">
               Building beautiful and functional web experiences.
             </p>

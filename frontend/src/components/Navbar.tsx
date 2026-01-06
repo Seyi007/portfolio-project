@@ -34,7 +34,7 @@ const Navbar = ({ scrolled }: NavbarProps) => {
             animate={{ opacity: 1 }}
             className="text-2xl font-bold gradient-text"
           >
-            Portfolio
+            Seyi Kuforiji
           </motion.div>
 
           {/* Desktop Navigation */}
