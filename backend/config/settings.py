@@ -21,6 +21,8 @@ class Settings:
         # Production URLs
         "https://portfolio-project-2nen.onrender.com",  # Backend URL
         "https://portfolio-frontend-49lr.onrender.com",  # Frontend URL
+        "https://seyi-kuforiji.xyz",  # Custom domain
+        "https://www.seyi-kuforiji.xyz",  # Custom domain www
     ]
     
     # Email Configuration
