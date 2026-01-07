@@ -76,6 +76,7 @@ const Experience = () => {
                     </div>
 
                     <h4 className="text-lg text-primary-400 mb-2">{exp.company}</h4>
+                    <p className="text-sm text-gray-500 mb-3">{exp.location}</p>
 
                     <div className="flex items-center gap-2 text-gray-400 mb-4">
                       <FiCalendar size={16} />

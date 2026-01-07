@@ -6,6 +6,7 @@ class Experience(BaseModel):
     id: int
     company: str
     position: str
+    location: str
     description: str
     start_date: str
     end_date: Optional[str] = None
