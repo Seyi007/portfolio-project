@@ -5,6 +5,7 @@ import { SiGit, SiPython, SiR, SiApachespark } from 'react-icons/si'
 import { AiOutlineExperiment } from 'react-icons/ai'
 import { projectsAPI } from '../services/api'
 import type { Project } from '../types'
+import LoadingSpinner from './LoadingSpinner'
 
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([])
@@ -28,11 +29,7 @@ const Projects = () => {
   }, [])
 
   if (loading) {
-    return (
-      <section id="projects" className="section-container">
-        <div className="text-center">Loading projects...</div>
-      </section>
-    )
+    return <LoadingSpinner message="Loading projects" />
   }
 
   const getProjectIcon = (title: string, technologies: string[]) => {

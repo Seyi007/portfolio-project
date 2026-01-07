@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion'
 import { FiCalendar, FiBriefcase } from 'react-icons/fi'
 import { experienceAPI } from '../services/api'
 import type { Experience as ExperienceType } from '../types'
+import LoadingSpinner from './LoadingSpinner'
 
 const Experience = () => {
   const [experiences, setExperiences] = useState<ExperienceType[]>([])
@@ -32,11 +33,7 @@ const Experience = () => {
   }
 
   if (loading) {
-    return (
-      <section id="experience" className="section-container">
-        <div className="text-center">Loading experience...</div>
-      </section>
-    )
+    return <LoadingSpinner message="Loading experience" />
   }
 
   return (

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { skillsAPI } from '../services/api'
 import type { Skill } from '../types'
+import LoadingSpinner from './LoadingSpinner'
 
 const Skills = () => {
   const [skills, setSkills] = useState<Skill[]>([])
@@ -28,11 +29,7 @@ const Skills = () => {
   }, [])
 
   if (loading) {
-    return (
-      <section id="skills" className="section-container">
-        <div className="text-center">Loading skills...</div>
-      </section>
-    )
+    return <LoadingSpinner message="Loading skills" />
   }
 
   const categories = ['All', ...Array.from(new Set(skills.map((skill) => skill.category)))]

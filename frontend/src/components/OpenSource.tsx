@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { FiMic, FiHeart, FiGithub, FiExternalLink, FiMapPin, FiCalendar } from 'react-icons/fi'
 import { openSourceAPI } from '../services/api'
 import type { OpenSourceContribution } from '../types'
+import LoadingSpinner from './LoadingSpinner'
 
 const OpenSource = () => {
   const [contributions, setContributions] = useState<OpenSourceContribution[]>([])
@@ -27,11 +28,7 @@ const OpenSource = () => {
   }, [])
 
   if (loading) {
-    return (
-      <section id="opensource" className="section-container">
-        <div className="text-center">Loading contributions...</div>
-      </section>
-    )
+    return <LoadingSpinner message="Loading contributions" />
   }
 
   const types = [
