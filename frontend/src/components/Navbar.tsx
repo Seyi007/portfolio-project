@@ -15,6 +15,7 @@ const Navbar = ({ scrolled }: NavbarProps) => {
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Open Source', href: '#opensource' },
     { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' },
   ]
